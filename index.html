@@ -1,0 +1,301 @@
+Index · HTML
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aadi Gupta — Full-Stack Developer & AI Enthusiast. B.Tech IT at GTBIT Delhi." />
+    <meta name="author" content="Aadi Gupta" />
+
+    <!-- Open Graph (for sharing links) -->
+    <meta property="og:title" content="Aadi Gupta — Portfolio" />
+    <meta property="og:description"
+        content="Full-Stack Developer & AI Enthusiast. Building real-world web apps and AI tools." />
+    <meta property="og:type" content="website" />
+
+    <title>Aadi Gupta — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet" />
+
+    <!-- Stylesheets (order matters) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+    <!-- ─── Custom Cursor ─── -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- ─── Scroll Progress Bar ─── -->
+    <div id="scroll-bar"></div>
+
+    <!-- ─── Animated Tech Background Canvas ─── -->
+    <canvas id="tech-canvas"></canvas>
+
+    <!-- ─── Ambient Orbs ─── -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- ═══════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════ -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <a class="nav-link active" href="#hero">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#who">Who Am I</a>
+        <a class="nav-link" href="#hobbies">Hobbies</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#certificates">Certs</a>
+        <a class="nav-link" href="#connect">Connect</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle light/dark mode">☀️</button>
+    </nav>
+
+    <!-- ═══════════════════════════════════
+       HERO
+  ═══════════════════════════════════ -->
+    <section id="hero" aria-label="Hero section">
+        <div class="inner">
+            <div class="hero-grid">
+
+                <!-- Left: Info -->
+                <div class="hero-left">
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        Open to Opportunities
+                    </div>
+
+                    <h1 class="hero-name">
+                        <span class="name-line1" id="hero-name-1">Aadi</span>
+                        <span class="name-line2" id="hero-name-2">Gupta.</span>
+                    </h1>
+
+                    <p class="hero-role" id="hero-college">B.Tech IT · GTBIT Delhi · 2025–2029</p>
+
+                    <!-- Typing effect -->
+                    <div class="hero-typing-row">
+                        <span class="typing-prefix">I'm a&nbsp;</span>
+                        <span id="typed-text"></span>
+                        <span class="typing-cursor"></span>
+                    </div>
+
+                    <p class="hero-desc" id="hero-desc">
+                        Building real-world web apps and AI-powered tools. Passionate about clean code, great UX, and
+                        solving problems that actually matter.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta">
+                        <a class="btn-primary" href="#projects">↓ View Projects</a>
+                        <a class="btn-ghost" href="#connect">Get in Touch</a>
+                    </div>
+
+                    <!-- Social Links (rendered by JS) -->
+                    <div id="hero-links" class="hero-links"></div>
+
+                    <!-- Stats (rendered by JS) -->
+                    <div id="hero-stats" class="hero-stats"></div>
+                </div>
+
+                <!-- Right: Animated Avatar -->
+                <div class="hero-avatar-wrap">
+                    <div class="avatar-ring-border"></div>
+                    <div class="hero-avatar">
+                        <span class="ag-initials">AG</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════ -->
+    <section id="about" aria-label="About section">
+        <div class="inner">
+            <div class="sec-label">About Me</div>
+            <h2 class="sec-title">A little about<br />who I am.</h2>
+            <p class="sec-subtitle">First-year student, self-taught developer, and someone who learns by building.</p>
+
+            <div class="about-grid">
+                <div class="about-card glass-card shimmer-on-hover rev">
+                    <div class="card-icon">🎓</div>
+                    <h3 class="card-title">Education</h3>
+                    <p class="card-body">
+                        <strong>B.Tech Information Technology</strong> at Guru Tegh Bahadur Institute of Technology,
+                        Delhi (2025–2029). School from Dr. B.R. Ambedkar Schools of Specialised Excellence.
+                    </p>
+                </div>
+
+                <div class="about-card glass-card shimmer-on-hover rev" style="transition-delay:.1s">
+                    <div class="card-icon">💼</div>
+                    <h3 class="card-title">Experience</h3>
+                    <p class="card-body">
+                        <strong>Campus Ambassador</strong> at eDC IIT Delhi — ranked among the best for BECon 2026.
+                        Promoted events, drove social media growth, and received a Letter of Recommendation.
+                    </p>
+                </div>
+
+                <div class="about-card glass-card shimmer-on-hover rev full" style="transition-delay:.2s">
+                    <div class="card-icon">🚀</div>
+                    <h3 class="card-title">My Story</h3>
+                    <p class="card-body" id="about-text">
+                        I'm a first-year B.Tech IT student at GTBIT Delhi with a strong passion for building things that
+                        work — from responsive web apps to AI-integrated tools. I love clean code, great user
+                        experiences, and solving problems that actually matter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       WHO AM I
+  ═══════════════════════════════════ -->
+    <section id="who" aria-label="Who am I section">
+        <div class="inner">
+            <div class="sec-label">Who Am I</div>
+            <h2 class="sec-title rev">More than just<br />a student.</h2>
+            <ul class="who-list rev" id="who-list">
+                <!-- Rendered by JS from DATA.personal.whoAmI -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       HOBBIES
+  ═══════════════════════════════════ -->
+    <section id="hobbies" aria-label="Hobbies section">
+        <div class="inner">
+            <div class="sec-label">Hobbies</div>
+            <h2 class="sec-title rev">What I do<br />beyond code.</h2>
+            <div class="hobbies-wrap rev" id="hobbies-grid">
+                <!-- Rendered by JS from DATA.personal.hobbies -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════ -->
+    <section id="projects" aria-label="Projects section">
+        <div class="inner">
+            <div class="sec-label">Projects</div>
+            <h2 class="sec-title rev">Things I've<br />built.</h2>
+            <p class="sec-subtitle rev" style="transition-delay:.1s">Real projects solving real problems — from AI to
+                e-commerce.</p>
+            <div class="proj-grid" id="projects-grid">
+                <!-- Rendered by JS from DATA.projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════ -->
+    <section id="skills" aria-label="Skills section">
+        <div class="inner">
+            <div class="sec-label">Skills</div>
+            <h2 class="sec-title rev">My tech<br />toolkit.</h2>
+            <p class="sec-subtitle rev" style="transition-delay:.1s">Languages, frameworks, cloud, and tools I work
+                with.</p>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Rendered by JS from DATA.skills -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       EDUCATION & EXPERIENCE
+  ═══════════════════════════════════ -->
+    <section id="education" aria-label="Education and Experience section">
+        <div class="inner">
+            <div class="sec-label">Education & Experience</div>
+            <h2 class="sec-title rev">Where I've<br />learned & worked.</h2>
+
+            <div class="edu-exp-grid">
+                <!-- Education Column -->
+                <div>
+                    <div class="tl-section-title">🎓 Education</div>
+                    <div id="edu-list">
+                        <!-- Rendered by JS from DATA.education -->
+                    </div>
+                </div>
+
+                <!-- Experience Column -->
+                <div>
+                    <div class="tl-section-title">💼 Experience</div>
+                    <div id="exp-list">
+                        <!-- Rendered by JS from DATA.experience -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       CERTIFICATES
+  ═══════════════════════════════════ -->
+    <section id="certificates" aria-label="Certificates section">
+        <div class="inner">
+            <div class="sec-label">Certificates</div>
+            <h2 class="sec-title rev">What I've<br />earned.</h2>
+            <p class="sec-subtitle rev" style="transition-delay:.1s">Oracle, Google Cloud, Deloitte, and more — verified
+                credentials.</p>
+            <div class="certs-grid" id="certs-grid">
+                <!-- Rendered by JS from DATA.certificates -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       CONNECT
+  ═══════════════════════════════════ -->
+    <section id="connect" aria-label="Contact section">
+        <div class="inner">
+            <div class="sec-label">Let's Connect</div>
+            <h2 class="sec-title rev">Say hello.<br />Let's build.</h2>
+            <p class="sec-subtitle rev" style="transition-delay:.1s">Open to opportunities, collaborations, and
+                interesting conversations.</p>
+
+            <div class="connect-grid rev" id="connect-grid" style="transition-delay:.2s">
+                <!-- Rendered by JS from DATA.connect -->
+            </div>
+
+            <div class="connect-email-row rev" style="transition-delay:.3s">
+                Or email directly: <a href="mailto:ag20071106@gmail.com" id="contact-email">ag20071106@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+    <footer role="contentinfo">
+        Designed & Built by <span>Aadi Gupta</span> &nbsp;·&nbsp; HTML · CSS · JavaScript &nbsp;·&nbsp; © 2025
+    </footer>
+
+    <!-- ═══════════════════════════════════
+       SCRIPTS (order matters!)
+  ═══════════════════════════════════ -->
+    <script src="js/data.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
